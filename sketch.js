@@ -1,29 +1,29 @@
 var car1 , car2 , car3, car4 ;
-var wall1 , wall2 , wall3 , wall4;
+var bullet1 , bullet2 , bullet3 , bullet4;
 
 function setup() {
   
   createCanvas(1600,400);
 
-  car1 = createSprite(50,80,30,20);
-  car1.shapeColor = "red";
-  car1.velocityX = 10 ;
-  car1.debug = true ;
+  bullet1= createSprite(50,80,30,20);
+  bullet1.shapeColor = "red";
+  bullet1.velocityX = 10 ;
+  bullet1.debug = true ;
   
-  car2 = createSprite(50,160,30,20);
-  car2.shapeColor = "yellow";
-  car2.velocityX = 15 ;
-  car2.debug = true ;
+  bullet2 = createSprite(50,160,30,20);
+  bullet2.shapeColor = "yellow";
+  bullet2.velocityX = 15 ;
+  bullet2.debug = true ;
 
-  car3 = createSprite(50,240,30,20);
-  car3.shapeColor = "green";
-  car3.velocityX = 20 ;
-  car3.debug = true ;
+  bullet3 = createSprite(50,240,30,20);
+   bullet3.shapeColor = "green";
+   bullet3.velocityX = 20 ;
+   bullet3.debug = true ;
 
-  car4 = createSprite(50,320,30,20);
-  car4.shapeColor = "blue";
-  car4.velocityX = 25 ;
-  car4.debug = true ;
+   bullet4 = createSprite(50,320,30,20);
+   bullet4.shapeColor = "blue";
+   bullet4.velocityX = 25 ;
+   bullet4.debug = true ;
   
 
   wall1 = createSprite(1400, 80, 50, 50);
@@ -49,37 +49,37 @@ function setup() {
 
     background(20);
 
-    if(car1.isTouching(wall1)){
+    if(bullet1.isTouching(wall1)){
 
-      car1.velocityX = 0 ;
-      car1.shapeColor = "red"
+      bullet1.velocityX = 0 ;
+      bullet1.shapeColor = "red"
 
       wall1.shapeColor = "red"
 
     }
 
-    if(car2.isTouching(wall2)){
+    if(bullet2.isTouching(wall2)){
 
-      car2.velocityX = 0 ;
-      car2.shapeColor = "red"
+      bullet2.velocityX = 0 ;
+      bullet2.shapeColor = "red"
       
       wall2.shapeColor = "red"
 
     }
 
-    if(car3.isTouching(wall3)){
+    if(bullet3.isTouching(wall3)){
 
-      car3.velocityX = 0 ;
-      car3.shapeColor = "red"
+      bullet3.velocityX = 0 ;
+      bullet3.shapeColor = "red"
       
       wall3.shapeColor = "red"
 
     }
 
-    if(car4.isTouching(wall4)){
+    if(bullet4.isTouching(wall4)){
 
-      car4.velocityX = 0 ;
-      car4.shapeColor = "red"
+      bullet4.velocityX = 0 ;
+      bullet4.shapeColor = "red"
       
       wall4.shapeColor = "red"
 
